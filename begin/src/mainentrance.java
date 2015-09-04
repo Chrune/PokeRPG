@@ -12,6 +12,7 @@ public class mainentrance {
         snum = bucky.nextDouble();
         answer = fnum + snum;
         System.out.println(answer);
+        System.out.println(answer + 32);
 
     }
 }
