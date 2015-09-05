@@ -8,7 +8,8 @@ public class mainentrance {
 
         System.out.println("Enter your name here: ");
         String name = input.nextLine();
-        startObject.simpleMessage(name);
+        startObject.setName(name);
+        startObject.saying();
 
     }
 }
