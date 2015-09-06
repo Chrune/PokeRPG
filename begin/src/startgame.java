@@ -1,13 +1,24 @@
-public class startgame {
-    private String name;
-    private endgame birthday;
+public enum startgame {
+    bucky("nice", "22"),
+    kelsey("cutie", "10"),
+    julia("bigmistake", "12");
 
-    public startgame(String theName, endgame theDate){
-        name = theName;
-        birthday = theDate;
+    private final String desc;
+    private final String year;
+
+    startgame(String description, String birthday){
+        desc = description;
+        year = birthday;
     }
 
-    public String toString(){
-        return String.format("My name is %s, my birthday is %s", name, birthday);
+    public String getDesc(){
+        return desc;
     }
+
+    public String getYear(){
+        return year;
+    }
+
 }
+
+

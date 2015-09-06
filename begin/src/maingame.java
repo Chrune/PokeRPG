@@ -4,10 +4,8 @@ import java.util.Random;
 public class maingame {
     public static void main(String[] args) {
 
-        endgame endObject = new endgame(4,5,6);
-        startgame startObject = new startgame("Greg", endObject);
-        System.out.println(startObject);
+        for(startgame people: startgame.values())
+            System.out.printf("%s\t%s\t%s\n",people,people.getDesc(), people.getYear());
     }
-
 
     }
